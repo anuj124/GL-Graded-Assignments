@@ -15,7 +15,7 @@ public class CredentialService {
 
 	public char[] generatePassword() {
 		Random random = new Random();
-		for (int i = 0; i <= 8; i++) {
+		for (int i = 0; i < 8; i++) {
 			password[i] = values.charAt(random.nextInt(values.length()));
 		}
 		return password;
