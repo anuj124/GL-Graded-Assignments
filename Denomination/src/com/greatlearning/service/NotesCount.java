@@ -21,7 +21,9 @@ public class NotesCount {
 			} else {
 				System.out.println("Your Amount will be paid in following denominations: ");
 				for (int i = 0; i < notes.length; i++) {
+					if(notesCount[i]>0) {
 					System.out.println(notes[i] + "-->" + notesCount[i]);
+					}
 				}
 			}
 		} catch (ArithmeticException e) {
